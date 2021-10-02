@@ -1,0 +1,109 @@
+.descriptionsContainer {
+  position: relative;
+  margin: 0 auto;
+}
+
+.descriptionsContainer .containerInfoDescrip {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.descriptionsContainer .containerInfoDescrip .videos {
+  margin: 70px 30px 0 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-shadow: 5px 5px 1px black;
+}
+
+.descriptionsContainer .containerInfoDescrip .trailers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  max-width: 1440px;
+}
+
+.descriptionsContainer .containerInfoDescrip .trailers .titleTrailers {
+  margin: 30px;
+}
+
+.descriptionsContainer .containerInfoDescrip .trailers .titleTrailers h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 5px 5px 1px black;
+}
+
+.descriptionsContainer .containerInfoDescrip .trailers .titleTrailers p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-shadow: 5px 5px 1px black;
+}
+
+.descriptionsContainer .containerInfoDescrip .trailers .titleTrailers .iframe {
+  max-width: 100%;
+}
+
+.descriptionsContainer .containerInfoDescrip .trailers .titleTrailers .iframe .videoInfo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.descriptionsContainer .containerInfoDescrip .reviews {
+  margin-top: 30px;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.descriptionsContainer .containerInfoDescrip .recommendations {
+  margin-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  max-width: 1440px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .descriptionsContainer .containerInfoDescrip .videos {
+    margin: 30px 30px 0 20px;
+    font-size: 25px;
+  }
+  .descriptionsContainer .containerInfoDescrip .trailers {
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .descriptionsContainer .containerInfoDescrip .trailers .titleTrailers {
+    margin: 20px;
+  }
+  .descriptionsContainer .containerInfoDescrip .trailers .titleTrailers h2 {
+    font-size: 20px;
+  }
+  .descriptionsContainer .containerInfoDescrip .recommendations {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 40px 0px;
+  }
+}
+/*# sourceMappingURL=MoviesDescriptions.css.map */

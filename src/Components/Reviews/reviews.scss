@@ -1,0 +1,81 @@
+.personReview{
+    display: flex;
+    max-width: 1000px;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, .3);
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, .5);
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .photo{
+        text-align: center;
+        .usuarioReview{
+            border-radius: 50%;
+        }
+
+        .namePerson{
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            text-shadow: 5px 5px 1px rgb(0, 0, 0);
+        }
+    }
+
+    .contentInfo{
+        box-sizing: border-box;
+        padding: 0 40px;
+        
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            text-shadow: 5px 5px 1px rgb(0, 0, 0);
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        height: 200px;
+        margin: 20px;
+        width: 90%;
+
+        .photo{
+
+            .namePerson{
+                font-size: 13px;
+            }
+        }
+
+        .contentInfo{
+            padding: 0px 5px 10px 20px;
+
+            p{
+                margin: 0;
+                padding-bottom: 20px;
+                font-size: 13px;
+            }
+        }
+
+        .usuarioReview{
+            height: 100px;
+            width: 100px;
+        }
+    }
+}

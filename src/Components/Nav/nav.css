@@ -1,0 +1,146 @@
+.nav_Container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  position: absolute;
+  z-index: 10000000;
+  top: 0;
+}
+
+.nav_Container .logo {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav_Container .logo {
+    display: none;
+  }
+}
+
+.nav_Container .groupNavOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_Container .groupNavOne .first_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_Container .groupNavOne .first_ul li {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav_Container .groupNavOne .first_ul li:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav_Container .groupNavOne .first_ul {
+    display: none;
+  }
+}
+
+.nav_Container .groupNavTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_Container .groupNavTwo .form_input .input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  width: 300px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.nav_Container .groupNavTwo .form_input .input:focus {
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+}
+
+.nav_Container .groupNavTwo .form_input .input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav_Container .groupNavTwo .form_input .input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav_Container .groupNavTwo .form_input .input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav_Container .groupNavTwo .form_input .input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav_Container .groupNavTwo .second_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_Container .groupNavTwo .second_ul li {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_Container .groupNavTwo .second_ul li.registerNav {
+  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662E57));
+  background: linear-gradient(to right, #983262, #662E57);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.nav_Container .groupNavTwo .second_ul :first-child {
+  margin-right: 15px;
+}
+
+.nav_Container .groupNavTwo .second_ul :first-child:hover {
+  opacity: .8;
+}
+
+.nav_Container .groupNavTwo .second_ul :last-child {
+  opacity: .9;
+}
+
+.nav_Container .groupNavTwo .second_ul :last-child:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav_Container .groupNavTwo {
+    display: none;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

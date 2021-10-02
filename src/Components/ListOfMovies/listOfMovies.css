@@ -1,0 +1,87 @@
+.containerAllPage {
+  width: 100%;
+}
+
+.containerAllPage .navCenter {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.containerAllPage .movies_Tv_Popular {
+  max-width: 1440px;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  margin: 0 auto;
+}
+
+.containerAllPage .movies_Tv_Popular .popularMovies {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0 0 40px;
+  color: #fff;
+  font-size: 35px;
+  opacity: .8;
+  text-shadow: 5px 5px 1px black;
+}
+
+.containerAllPage .movies_Tv_Popular .containerMoviesGrid {
+  padding: 40px;
+  max-width: 1100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px 5px;
+}
+
+.containerAllPage .movies_Tv_Popular .bannerHome {
+  position: relative;
+}
+
+.containerAllPage .movies_Tv_Popular .bannerHome::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
+  background: linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent);
+  z-index: 1000000000000;
+}
+
+.containerAllPage .movies_Tv_Popular .PopularTop {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  margin: 40px 20px 0 0;
+}
+
+@media screen and (max-width: 1350px) {
+  .containerAllPage .movies_Tv_Popular .PopularTop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .containerAllPage .movies_Tv_Popular .popularMovies {
+    padding: 20px 0 0 20px;
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .containerAllPage .movies_Tv_Popular .containerMoviesGrid {
+    padding: 20px;
+    max-width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 50px 0px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+/*# sourceMappingURL=listOfMovies.css.map */

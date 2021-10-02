@@ -1,0 +1,65 @@
+.containerPopularTop {
+  height: 2610px;
+}
+
+.containerPopularTop .popular {
+  height: 800px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.containerPopularTop .popular::-webkit-scrollbar {
+  width: 5px;
+}
+
+.containerPopularTop .popular::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.containerPopularTop .popular::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.containerPopularTop .topRated {
+  height: 800px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.containerPopularTop .topRated::-webkit-scrollbar {
+  width: 5px;
+}
+
+.containerPopularTop .topRated::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.containerPopularTop .topRated::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.containerPopularTop .tittlePopTop {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662E57));
+  background: linear-gradient(to right, #983262, #662E57);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+}
+
+.containerPopularTop .h3Second {
+  margin-top: 80px;
+}
+/*# sourceMappingURL=popularTop.css.map */

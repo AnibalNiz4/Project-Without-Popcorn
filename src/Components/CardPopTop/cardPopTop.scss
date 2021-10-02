@@ -1,0 +1,52 @@
+.cardContainerPopTop{
+    position: relative;
+    width: 170px;
+    height: 200px;
+    display: flex;
+
+    .CardPopTop{
+
+        .imgCardPopTop{
+            width: 110px;
+            height: 170px;
+            border-radius: 5px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+
+        .namePopTop{
+            text-align: center;
+        }
+    }
+
+    .hoverCardPopTop{
+        text-align: center;
+
+        .namePopTop{
+        margin: 0 0 10px 0;
+        font-size: 13px;
+        font-weight: 800;
+        text-shadow: 2px 2px 1px rgb(0, 0, 0);
+        }
+
+        .averagePopTop{
+            font-size: 14px;
+            color: orange;
+        }
+
+        .genresPopTop{
+            margin-top: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            p{
+                font-size: 12px;
+                background: rgba(0, 0, 0, .5);
+                margin: 1px;
+                padding: 3px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

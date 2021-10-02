@@ -1,0 +1,185 @@
+.banner_Container {
+  height: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.banner_Container::before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 300px;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
+  background: linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
+  -webkit-mask-image: linear-gradient(to top, #1A0D28, transparent);
+          mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
+          mask-image: linear-gradient(to top, #1A0D28, transparent);
+  z-index: 10;
+}
+
+.banner_Container .div_Img {
+  position: relative;
+  width: 100vw;
+}
+
+.banner_Container .div_Img .background_banner {
+  position: absolute;
+  opacity: .3;
+  top: 0;
+  height: 800px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner_Container .div_Img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
+  background: linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
+  -webkit-mask-image: linear-gradient(to top, #1A0D28, transparent);
+          mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
+          mask-image: linear-gradient(to top, #1A0D28, transparent);
+  z-index: 10;
+}
+
+.banner_Container .text_Banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 600px;
+  color: white;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.banner_Container .text_Banner .title_Banner {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 5px 5px 1px black;
+  margin: 0;
+}
+
+.banner_Container .text_Banner .tagline_Banner {
+  font-size: 25px;
+  margin: 0;
+  text-shadow: 5px 5px 1px black;
+}
+
+.banner_Container .text_Banner .genres_Banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner_Container .text_Banner .genres_Banner p {
+  margin-left: 5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.banner_Container .text_Banner .genres_Banner p:first-child {
+  margin-left: 0;
+}
+
+.banner_Container .text_Banner .overview_Banner {
+  max-width: 500px;
+  font-size: 18px;
+  text-shadow: 5px 5px 1px black;
+}
+
+.banner_Container .text_Banner .vote_Banner {
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.banner_Container .text_Banner .vote_Banner .span_Vote {
+  color: yellow;
+}
+
+.banner_Container .text_Banner .moreInfoBanner {
+  padding: 10px 20px;
+  text-align: center;
+  width: 130px;
+  border-radius: 10px;
+  opacity: .8;
+  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662E57));
+  background: linear-gradient(to right, #983262, #662E57);
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  z-index: 11115;
+}
+
+.banner_Container .text_Banner .moreInfoBanner:hover {
+  opacity: .9;
+}
+
+@media screen and (max-width: 1000px) {
+  .banner_Container {
+    height: 550px;
+  }
+  .banner_Container::before {
+    height: 150px;
+  }
+  .banner_Container .div_Img .background_banner {
+    height: 550px;
+  }
+  .banner_Container .div_Img::before {
+    height: 150px;
+  }
+  .banner_Container .text_Banner {
+    height: 500px;
+    padding: 0 20px;
+  }
+  .banner_Container .text_Banner .title_Banner {
+    font-size: 25px;
+  }
+  .banner_Container .text_Banner .tagline_Banner {
+    font-size: 15px;
+  }
+  .banner_Container .text_Banner .genres_Banner p {
+    padding: 3px;
+    font-size: 12px;
+  }
+  .banner_Container .text_Banner .overview_Banner {
+    font-size: 15px;
+  }
+  .banner_Container .text_Banner .vote_Banner {
+    padding: 3px;
+    width: 80px;
+    font-size: 15px;
+  }
+  .banner_Container .text_Banner .vote_Banner .span_Vote {
+    font-size: 15px;
+  }
+  .banner_Container .text_Banner .moreInfoBanner {
+    padding: 7px 10px;
+    width: 100px;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=banner.css.map */

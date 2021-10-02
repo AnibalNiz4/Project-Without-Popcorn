@@ -1,0 +1,195 @@
+.banner_Container{
+    height: 800px;
+    position: relative;
+    margin: 0 auto;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 300px;
+        bottom: 0;
+        background: linear-gradient(to top, #1A0D28, transparent),
+                    linear-gradient(to top, #1A0D28, transparent),
+                    linear-gradient(to top, #1A0D28, transparent);
+        mask-image: linear-gradient(to top, #1A0D28, transparent);
+        z-index: 10;
+    }
+
+    .div_Img{
+        position: relative;
+        width: 100vw;
+
+        .background_banner{
+            position: absolute;
+            opacity: .3;
+            top: 0;
+            height: 800px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to top, #1A0D28, transparent),
+                        linear-gradient(to top, #1A0D28, transparent),
+                        linear-gradient(to top, #1A0D28, transparent);
+            mask-image: linear-gradient(to top, #1A0D28, transparent);
+            z-index: 10;
+        }
+
+    }
+
+    .text_Banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 600px;
+        color: rgb(255, 255, 255);
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 40px;
+
+        .title_Banner{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 50px;
+            text-shadow: 5px 5px 1px rgb(0, 0, 0);
+            margin: 0;
+        }
+    
+        .tagline_Banner{
+            font-size: 25px;
+            margin: 0;
+            text-shadow: 5px 5px 1px rgb(0, 0, 0);
+        }
+
+        .genres_Banner{
+            display: flex;
+            
+            p{
+                margin-left: 5px;
+                padding: 5px;
+                background: rgba(0, 0, 0, .8);
+                border-radius: 10px;
+            }
+
+            p:first-child{
+                margin-left: 0;
+            }
+        }
+    
+        .overview_Banner{
+            max-width: 500px;
+            font-size: 18px;
+            text-shadow: 5px 5px 1px rgb(0, 0, 0);
+        }
+    
+        .vote_Banner{
+            padding: 5px;
+            background: rgba(0, 0, 0 , .8);
+            text-align: center;
+            width: 80px;
+            border-radius: 10px;
+            .span_Vote{
+                color: rgb(255, 255, 0);
+            }
+        }
+
+        .moreInfoBanner{
+            padding: 10px 20px;
+            text-align: center;
+            width: 130px;
+            border-radius: 10px;
+            opacity: .8;
+            background: linear-gradient(to right, #983262, #662E57);
+            cursor: pointer;
+            box-shadow: 3px 3px 1px rgba(0, 0, 0, .5);
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+            z-index: 11115;
+
+            &:hover{
+                opacity: .9;
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 1000px){
+        height: 550px;
+        
+        &::before{
+            height: 150px;
+        }
+
+        .div_Img{
+
+            .background_banner{
+                height: 550px;
+            }
+
+            &::before{
+                height: 150px;
+            }
+        }
+
+        .text_Banner{
+            height: 500px;
+            padding: 0 20px;
+
+            .title_Banner{
+                font-size: 25px;
+            }
+        
+            .tagline_Banner{
+                font-size: 15px;
+            }
+
+            .genres_Banner{
+                
+                p{
+                    padding: 3px;
+                    font-size: 12px;
+                }
+            }
+        
+            .overview_Banner{
+                font-size: 15px;
+            }
+        
+            .vote_Banner{
+                padding: 3px;
+                width: 80px;
+                font-size: 15px;
+
+                .span_Vote{
+                    font-size: 15px;
+                }
+            }
+
+            .moreInfoBanner{
+                padding: 7px 10px;
+                width: 100px;
+                font-size: 15px;
+            }
+
+        }
+    }
+}

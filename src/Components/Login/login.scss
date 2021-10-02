@@ -1,0 +1,210 @@
+.loginContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+
+    .backgroundLogin{
+        width: 100%;
+        background: url('./logo3.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .containerLogin{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .loginWithin{
+            box-sizing: border-box;
+            height: 80%;
+            max-height: 550px;
+            width: 60%;
+            max-width: 600px;
+            background: rgba(0, 0, 0, .3);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .back{
+                padding: 7px;
+                width: 80px;
+                border-radius: 5px;
+                margin: 30px 0 0 30px;
+                text-align: center;
+                background: linear-gradient(to right, #983262, #662E57);
+                cursor: pointer;
+                opacity: .8;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+
+            .titleLogin{
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            .formLogin{
+                box-sizing: border-box;
+                padding: 0 30px;
+
+                .h3Login{
+                    margin: 10px 0;
+                    color: white;
+                }
+
+                .h3_P_Login{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .pLogin{
+                        margin: 0;
+                        font-size: 13px;
+                        opacity: .6;
+                        cursor: pointer;
+                    }
+                }
+
+                .inputLogin{
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    background: rgba(0, 0, 0, .4);
+                    color: white;
+
+                    &:focus{
+                        background: rgba(0, 0, 0, .8);
+                        
+                        &::placeholder{
+                            color: rgba(255, 255, 255, .7);
+                        }
+                    }
+                }
+
+                .inputSesion{
+                    margin-top: 30px;
+                    border: none;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    background: linear-gradient(to right, #983262, #662E57);
+                    cursor: pointer;
+                    color: white;
+                    opacity: .8;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .textRegister{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 10px 30px;
+
+                p{
+                    opacity: .6;
+                    font-weight: 100;
+                }
+
+                h4{
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        flex-direction: column;
+        justify-content: stretch;
+
+        .backgroundLogin{
+            height: 200px;
+        }
+
+        .containerLogin{
+            height: 100%;
+
+            .loginWithin{
+                height: 100%;
+            }
+        }
+        
+    }
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        justify-content: stretch;
+
+        .backgroundLogin{
+            height: 200px;
+        }
+
+        .containerLogin{
+    
+            .loginWithin{
+                max-height: 400px;
+                width: 90%;
+    
+                .back{
+                    padding: 4px;
+                    width: 80px;
+                    margin: 0 20px;
+                }
+    
+                .titleLogin{
+                    margin: 10px 0;
+                    font-size: 25px;
+                }
+    
+                .formLogin{
+                    padding: 0 20px;
+    
+                    .h3Login{
+                        margin: 5px 0;
+                        font-size: 17px;
+                    }
+    
+                    .h3_P_Login{
+                        margin-top: 10px;
+                        font-size: 15px;
+                    }
+    
+                    .inputSesion{
+                        margin-top: 20px;
+                        font-size: 15px;
+                    }
+                }
+    
+                .textRegister{
+    
+                    p{
+                        font-size: 14px;
+                    }
+    
+                    h4{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

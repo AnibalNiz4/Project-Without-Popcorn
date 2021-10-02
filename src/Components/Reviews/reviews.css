@@ -1,0 +1,83 @@
+.personReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.personReview::-webkit-scrollbar {
+  width: 10px;
+}
+
+.personReview::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.personReview::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.personReview .photo {
+  text-align: center;
+}
+
+.personReview .photo .usuarioReview {
+  border-radius: 50%;
+}
+
+.personReview .photo .namePerson {
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-shadow: 5px 5px 1px black;
+}
+
+.personReview .contentInfo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 40px;
+}
+
+.personReview .contentInfo p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-shadow: 5px 5px 1px black;
+}
+
+@media screen and (max-width: 1000px) {
+  .personReview {
+    height: 200px;
+    margin: 20px;
+    width: 90%;
+  }
+  .personReview .photo .namePerson {
+    font-size: 13px;
+  }
+  .personReview .contentInfo {
+    padding: 0px 5px 10px 20px;
+  }
+  .personReview .contentInfo p {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 13px;
+  }
+  .personReview .usuarioReview {
+    height: 100px;
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=reviews.css.map */

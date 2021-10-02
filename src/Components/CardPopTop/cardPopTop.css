@@ -1,0 +1,58 @@
+.cardContainerPopTop {
+  position: relative;
+  width: 170px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardContainerPopTop .CardPopTop .imgCardPopTop {
+  width: 110px;
+  height: 170px;
+  border-radius: 5px;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardContainerPopTop .CardPopTop .namePopTop {
+  text-align: center;
+}
+
+.cardContainerPopTop .hoverCardPopTop {
+  text-align: center;
+}
+
+.cardContainerPopTop .hoverCardPopTop .namePopTop {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  font-weight: 800;
+  text-shadow: 2px 2px 1px black;
+}
+
+.cardContainerPopTop .hoverCardPopTop .averagePopTop {
+  font-size: 14px;
+  color: orange;
+}
+
+.cardContainerPopTop .hoverCardPopTop .genresPopTop {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardContainerPopTop .hoverCardPopTop .genresPopTop p {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 1px;
+  padding: 3px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=cardPopTop.css.map */

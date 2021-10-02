@@ -1,0 +1,254 @@
+.loginContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.loginContainer .backgroundLogin {
+  width: 100%;
+  background: url("./logo3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginContainer .containerLogin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginContainer .containerLogin .loginWithin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 80%;
+  max-height: 550px;
+  width: 60%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginContainer .containerLogin .loginWithin .back {
+  padding: 7px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 30px 0 0 30px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662E57));
+  background: linear-gradient(to right, #983262, #662E57);
+  cursor: pointer;
+  opacity: .8;
+}
+
+.loginContainer .containerLogin .loginWithin .back:hover {
+  opacity: 1;
+}
+
+.loginContainer .containerLogin .loginWithin .titleLogin {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .h3Login {
+  margin: 10px 0;
+  color: white;
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .h3_P_Login {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .h3_P_Login .pLogin {
+  margin: 0;
+  font-size: 13px;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputLogin {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputLogin:focus {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputLogin:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputLogin:focus:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputLogin:focus::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputLogin:focus::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputSesion {
+  margin-top: 30px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662E57));
+  background: linear-gradient(to right, #983262, #662E57);
+  cursor: pointer;
+  color: white;
+  opacity: .8;
+}
+
+.loginContainer .containerLogin .loginWithin .formLogin .inputSesion:hover {
+  opacity: 1;
+}
+
+.loginContainer .containerLogin .loginWithin .textRegister {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 30px;
+}
+
+.loginContainer .containerLogin .loginWithin .textRegister p {
+  opacity: .6;
+  font-weight: 100;
+}
+
+.loginContainer .containerLogin .loginWithin .textRegister h4 {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .loginContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .loginContainer .backgroundLogin {
+    height: 200px;
+  }
+  .loginContainer .containerLogin {
+    height: 100%;
+  }
+  .loginContainer .containerLogin .loginWithin {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .loginContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .loginContainer .backgroundLogin {
+    height: 200px;
+  }
+  .loginContainer .containerLogin .loginWithin {
+    max-height: 400px;
+    width: 90%;
+  }
+  .loginContainer .containerLogin .loginWithin .back {
+    padding: 4px;
+    width: 80px;
+    margin: 0 20px;
+  }
+  .loginContainer .containerLogin .loginWithin .titleLogin {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+  .loginContainer .containerLogin .loginWithin .formLogin {
+    padding: 0 20px;
+  }
+  .loginContainer .containerLogin .loginWithin .formLogin .h3Login {
+    margin: 5px 0;
+    font-size: 17px;
+  }
+  .loginContainer .containerLogin .loginWithin .formLogin .h3_P_Login {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .loginContainer .containerLogin .loginWithin .formLogin .inputSesion {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .loginContainer .containerLogin .loginWithin .textRegister p {
+    font-size: 14px;
+  }
+  .loginContainer .containerLogin .loginWithin .textRegister h4 {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

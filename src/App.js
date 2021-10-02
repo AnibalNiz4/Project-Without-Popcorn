@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import ListOfMovies from './Components/ListOfMovies/ListOfMovies';
+import { Route, Link } from 'wouter';
+import './app.scss';
+import MoviesDescriptions from './Components/MoviesDescriptions/MoviesDescriptions';
+import ScrollToTop from './Components/ScrollToTop';
+import MoviesSections from './Components/Movies/MoviesSection';
+import TvShowsSection from './Components/Movies/TvShowsSection';
+import Login from './Components/Login/Login';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route component={MoviesDescriptions} path='/movie/:movieId'>
+        {ScrollToTop()}
+      </Route>
+      <Route component={MoviesDescriptions} path='/tv/:tvId'>
+        {ScrollToTop()}
+      </Route>
+      {/* <Route
+        component={Banner}
+        path='/'
+      /> */}
+      <Route component={ListOfMovies} path='/'>
+        {ScrollToTop()}
+      </Route>
+      <Route
+        component={MoviesSections}
+        path='/movies'
+      />
+      <Route
+        component={TvShowsSection}
+        path='/tv'
+      />
+      <Route
+        component={Login}
+        path='/login'
+      />
     </div>
   );
 }
