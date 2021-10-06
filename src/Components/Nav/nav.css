@@ -50,7 +50,7 @@
 }
 
 .nav_Container .groupNavOne .first_ul li:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1000px) {
@@ -113,25 +113,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5px;
 }
 
 .nav_Container .groupNavTwo .second_ul li.registerNav {
-  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662E57));
-  background: linear-gradient(to right, #983262, #662E57);
-  padding: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662e57));
+  background: linear-gradient(to right, #983262, #662e57);
   border-radius: 8px;
 }
 
 .nav_Container .groupNavTwo .second_ul :first-child {
-  margin-right: 15px;
+  margin-right: 1px;
 }
 
 .nav_Container .groupNavTwo .second_ul :first-child:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .nav_Container .groupNavTwo .second_ul :last-child {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .nav_Container .groupNavTwo .second_ul :last-child:hover {

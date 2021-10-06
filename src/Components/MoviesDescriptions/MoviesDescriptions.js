@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useHistory, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import getMoviesDetails from "../../Services/getMoviesDetails";
 import Banner from "../Banner/Banner";
 import Nav from "../Nav/Nav";
@@ -11,58 +11,44 @@ import genreMovies from "../../Services/genreMovies";
 import getRecommendations from "../../Services/getRecommendations";
 
 export default function MoviesDescriptions() {
-  const id = useLocation();
-  // const id = useLocation()[0];
-
-  console.log(id);
+  const { pathname, search } = useLocation();
+  const id = new URLSearchParams(search).get("id");
 
   const [details, setDetails] = useState(null);
   const [review, setReview] = useState("");
   const [recommendations, setRecommendations] = useState([]);
   const [genre, setGenre] = useState([]);
 
-  // useEffect(() => {
-  //   getMoviesDetails(id + "/videos").then((data) => {
-  //     setDetails(data);
-  //   });
-  //   getMoviesDetails(`${id}/reviews`).then((data) => {
-  //     setReview(data);
-  //   });
-  //   getRecommendations(id + "/recommendations").then((data) => {
-  //     setRecommendations(data);
-  //   });
-  //   genreMovies().then((f) => {
-  //     setGenre(f);
-  //   });
-  // }, [id]);
-
-  let info;
-
-  // if (id[1] === "m") {
-  //   info = "/movie/";
-  // } else if (id[1] === "t") {
-  //   info = "/tv/";
-  // }
-
-  // if (!details) {
-  //   return null;
-  // }
-
-  // if (review == "") {
-  //   return null;
-  // }
+  useEffect(() => {
+    if (id && pathname) {
+      getMoviesDetails(`${pathname}/${id}/videos`).then((data) => {
+        setDetails(data);
+      });
+      getMoviesDetails(`${pathname}/${id}/reviews`).then((data) => {
+        setReview(data);
+      });
+      getRecommendations(`${pathname}/${id}/recommendations`).then((data) => {
+        setRecommendations(data);
+      });
+      genreMovies().then((f) => {
+        setGenre(f);
+      });
+    }
+  }, [id, pathname]);
 
   return (
     <div className="descriptionsContainer">
-      {/* <div className="bannerHome">{<Banner className="" id={id} />}</div> */}
+      <div className="bannerHome">{<Banner className="" id={id} />}</div>
       <div className="containerInfoDescrip">
         <div className="navCenter">
           <Nav />
         </div>
-        {/* <h1 className="videos">Videos</h1>
-        <div className="trailers">{<InfoVideos details={details} />}</div>
+        <h1 className="videos">Videos</h1>
+        <div className="trailers">
+          {details && <InfoVideos details={details} />}
+        </div>
         <h1 className="videos">Reviews</h1>
-        <div className="reviews">{<Reviews review={review} />}</div>
+        <div className="reviews">{review && <Reviews review={review} />}</div>
         <h1 className="videos">Recommendations</h1>
         <div className="recommendations">
           {recommendations.map((boe) => (
@@ -75,10 +61,10 @@ export default function MoviesDescriptions() {
               overview={boe.overview}
               genre_ids={boe.genre_ids}
               genres={genre}
-              info={info}
+              info={`${pathname}?id=${boe.id}`}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .descriptionsContainer {
-  position: relative;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .descriptionsContainer .containerInfoDescrip {
@@ -10,7 +10,7 @@
 
 .descriptionsContainer .containerInfoDescrip .videos {
   margin: 70px 30px 0 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 40px;
   text-shadow: 5px 5px 1px black;
@@ -29,14 +29,14 @@
 }
 
 .descriptionsContainer .containerInfoDescrip .trailers .titleTrailers h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 25px;
   text-shadow: 5px 5px 1px black;
 }
 
 .descriptionsContainer .containerInfoDescrip .trailers .titleTrailers p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 13px;
   text-shadow: 5px 5px 1px black;
@@ -106,4 +106,4 @@
     gap: 40px 0px;
   }
 }
-/*# sourceMappingURL=MoviesDescriptions.css.map */
+/*# sourceMappingURL=moviesDescriptions.css.map */

@@ -16,16 +16,22 @@ export default function NavResponsive() {
     <div className="containerResponsiveNav">
       <div className={topBar ? "navRes_Container" : "navRes_Container active"}>
         <ul className="ulResponsive">
-          <Link onClick={setTopBar} to="/movies">
-            <li>Movies</li>
-          </Link>
-          <Link onClick={setTopBar} to="/tv">
-            <li>TV Shows</li>
-          </Link>
+          <li>
+            <Link onClick={setTopBar} to="/movies">
+              Movies
+            </Link>
+          </li>
+          <li>
+            <Link onClick={setTopBar} to="/tv">
+              TV Shows
+            </Link>
+          </li>
           <li>My List</li>
-          <Link onClick={setTopBar} to="/login">
-            <li>Login</li>
-          </Link>
+          <li>
+            <Link onClick={setTopBar} to="/login">
+              Login
+            </Link>
+          </li>
           <li className="registerNav">Register</li>
           <form className="form_inputRes" onSubmit={handleSubmit}>
             <input

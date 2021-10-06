@@ -1,137 +1,138 @@
-.containerResponsiveNav{
+.containerResponsiveNav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .navRes_Container {
+    position: fixed;
+
     width: 100%;
-    position: absolute;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    padding: 0;
+    margin: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    top: -110%;
+    transition: all 0.3s ease-in-out;
 
-    .navRes_Container{
-        position: fixed;
+    .ulResponsive {
+      margin: 0;
+      margin-top: 60px;
+      padding: 0;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      li {
+        cursor: pointer;
         width: 100%;
+        height: 80px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, .8);
-        padding: 0;
-        margin: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 100vh;
-        top: -110%;
-        transition: all .3s ease-in-out;
-    
-        .ulResponsive{
-            margin: 0;
-            margin-top: 60px;
-            padding: 0;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-    
-            & :first-child{
-                border-top: 1px solid rgba(255, 255, 255, .4);
-            }
-    
-            li{
-                cursor: pointer;
-                width: 100%;
-                height: 80px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-bottom: 1px solid rgba(255, 255, 255, .4);
-    
-                &:hover{
-                    background: rgba(255, 255, 255, .2);
-                }
-            }
-    
-            .form_inputRes{
-                width: 100%;
-        
-                .inputRes{
-                    margin-top: 20px;
-                    border: none;
-                    outline: none;
-                    padding: 5px 10px;
-                    width: 70%;
-                    height: 30px;
-                    border-radius: 8px;
-                    background: rgba(0, 0, 0, .3);
-                    color: rgba(255, 255, 255, .8);
-                    border: .5px solid rgba(255, 255, 255, .4);
-        
-                    &:focus{
-                        border: .5px solid rgba(255, 255, 255, .6);
-                    }
-        
-                    &::placeholder{
-                        color: rgba(255, 255, 255, .5);
-                    }
-                }
-            }
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
         }
+      }
+
+      .form_inputRes {
+        width: 100%;
+
+        .inputRes {
+          margin-top: 20px;
+          border: none;
+          outline: none;
+          padding: 5px 10px;
+          width: 70%;
+          height: 30px;
+          border-radius: 8px;
+          background: rgba(0, 0, 0, 0.3);
+          color: rgba(255, 255, 255, 0.8);
+          border: 0.5px solid rgba(255, 255, 255, 0.4);
+
+          &:focus {
+            border: 0.5px solid rgba(255, 255, 255, 0.6);
+          }
+
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    top: 0;
+  }
+
+  .hamburgerLogoNav {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+
+    .logoNavRes {
+      img {
+        height: 25px;
+        cursor: pointer;
+      }
     }
 
-    .active{
-        top: 0;
+    .hamburgerNav {
+      height: 40px;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+
+      span {
+        transition: all 0.3s ease-in-out;
+        height: 2px;
+        background: white;
+        width: 25px;
+        margin-top: 4px;
+      }
     }
-    
-    .hamburgerLogoNav{
-        margin: 20px;
-        position: relative;
-        display: flex;
-        width: 95%;
-        justify-content: space-between;
-    
-        .logoNavRes{
-            img{
-                height: 25px;
-                cursor: pointer;
-            }
-        }
-    
-        .hamburgerNav{
-            height: 40px;
-            padding-right: 20px;
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-    
-            span{
-                transition: all .3s ease-in-out;
-                height: 2px;
-                background: white;
-                width: 25px;
-                margin-top: 4px;
-            }
-        }
 
-        .active{
+    .active {
+      & :first-child {
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in-out;
+        transform-origin: 25%;
+      }
 
-            & :first-child{
-                transform: rotate(45deg);
-                transition: all .3s ease-in-out;
-                transform-origin: 25%;
-            }
-
-            & :nth-child(2){
-                display: none;
-            }
-
-            & :last-child{
-                transform: rotate(-45deg);
-                transition: all .3s ease-in-out;
-                transform-origin: 40%;
-            }
-        }
-    }
-    
-    @media screen and (min-width: 1000px) {
+      & :nth-child(2) {
         display: none;
+      }
+
+      & :last-child {
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+        transform-origin: 40%;
+      }
     }
+  }
+
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
 }

@@ -5,28 +5,29 @@
 }
 
 .banner_Container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100vw;
   height: 300px;
   bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
-  background: linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent);
-  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
-  -webkit-mask-image: linear-gradient(to top, #1A0D28, transparent);
-          mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
-          mask-image: linear-gradient(to top, #1A0D28, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent));
+  background: linear-gradient(to top, #1a0d28, transparent), linear-gradient(to top, #1a0d28, transparent), linear-gradient(to top, #1a0d28, transparent);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent));
+  -webkit-mask-image: linear-gradient(to top, #1a0d28, transparent);
+          mask-image: -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent));
+          mask-image: linear-gradient(to top, #1a0d28, transparent);
   z-index: 10;
 }
 
 .banner_Container .div_Img {
+  pointer-events: none;
   position: relative;
   width: 100vw;
 }
 
 .banner_Container .div_Img .background_banner {
   position: absolute;
-  opacity: .3;
+  opacity: 0.3;
   top: 0;
   height: 800px;
   width: 100%;
@@ -35,18 +36,18 @@
 }
 
 .banner_Container .div_Img::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 300px;
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
-  background: linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent), linear-gradient(to top, #1A0D28, transparent);
-  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
-  -webkit-mask-image: linear-gradient(to top, #1A0D28, transparent);
-          mask-image: -webkit-gradient(linear, left bottom, left top, from(#1A0D28), to(transparent));
-          mask-image: linear-gradient(to top, #1A0D28, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent));
+  background: linear-gradient(to top, #1a0d28, transparent), linear-gradient(to top, #1a0d28, transparent), linear-gradient(to top, #1a0d28, transparent);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent));
+  -webkit-mask-image: linear-gradient(to top, #1a0d28, transparent);
+          mask-image: -webkit-gradient(linear, left bottom, left top, from(#1a0d28), to(transparent));
+          mask-image: linear-gradient(to top, #1a0d28, transparent);
   z-index: 10;
 }
 
@@ -71,7 +72,7 @@
 }
 
 .banner_Container .text_Banner .title_Banner {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 50px;
   text-shadow: 5px 5px 1px black;
@@ -124,9 +125,9 @@
   text-align: center;
   width: 130px;
   border-radius: 10px;
-  opacity: .8;
-  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662E57));
-  background: linear-gradient(to right, #983262, #662E57);
+  opacity: 0.8;
+  background: -webkit-gradient(linear, left top, right top, from(#983262), to(#662e57));
+  background: linear-gradient(to right, #983262, #662e57);
   cursor: pointer;
   -webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
           box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
@@ -135,7 +136,7 @@
 }
 
 .banner_Container .text_Banner .moreInfoBanner:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 1000px) {

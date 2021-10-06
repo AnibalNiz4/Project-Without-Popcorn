@@ -68,7 +68,7 @@ export default function ListOfMovies() {
                 overview={boe.overview}
                 genre_ids={boe.genre_ids}
                 genres={genre}
-                info="/tv/"
+                info={`/tv?id=${boe.id}`}
               />
             ))}
           </div>
