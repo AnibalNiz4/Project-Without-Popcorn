@@ -12,7 +12,7 @@ export default function CardPopTop({
 }) {
   return (
     <div className="cardContainerPopTop">
-      <Link to={info + id}>
+      <Link to={info}>
         <div className="CardPopTop">
           <img
             className="imgCardPopTop"

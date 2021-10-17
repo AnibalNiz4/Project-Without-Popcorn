@@ -20,7 +20,7 @@ export default function Nav() {
           <Link to="/movies">
             <li>Movies</li>
           </Link>
-          <Link to="/tv">
+          <Link to="/tvs">
             <li>TV Shows</li>
           </Link>
           <li>My List</li>

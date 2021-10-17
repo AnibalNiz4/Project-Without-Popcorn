@@ -11,9 +11,6 @@ export default function Movies({
   id,
   info,
 }) {
-  // console.log(overview);
-  // console.log(info);
-  // console.log(genres);
   return (
     <div className="cardContainer">
       <div className="movieCard">

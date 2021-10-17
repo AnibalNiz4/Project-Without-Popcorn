@@ -76,7 +76,7 @@
   font-weight: 800;
   font-size: 50px;
   text-shadow: 5px 5px 1px black;
-  margin: 0;
+  margin: 100px 0 0 0;
 }
 
 .banner_Container .text_Banner .tagline_Banner {
@@ -103,7 +103,7 @@
 }
 
 .banner_Container .text_Banner .overview_Banner {
-  max-width: 500px;
+  max-width: 600px;
   font-size: 18px;
   text-shadow: 5px 5px 1px black;
 }
@@ -133,6 +133,7 @@
           box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   z-index: 11115;
+  position: relative;
 }
 
 .banner_Container .text_Banner .moreInfoBanner:hover {

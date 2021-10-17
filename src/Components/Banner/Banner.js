@@ -3,11 +3,20 @@ import getMovies from "../../Services/getMovies";
 import { useEffect, useState } from "react";
 import "./banner.scss";
 import genreMovies from "../../Services/genreMovies";
-
-import { useLocation, Link } from "react-router-dom";
+import { useLocation ,Link } from "react-router-dom";
 
 export default function Banner({ id }) {
-  const idLocal = useLocation()[0];
+  const { search } = useLocation();
+  const idLocal = search.substr(4);
+  let buttonBanner = id.substr(7);
+  let newId;
+
+  if(id[1] === 'm'){
+    newId = '/movie/' + idLocal;
+  }
+  else if(id[1] === 't'){
+    newId = '/tv/' + idLocal;
+  }
 
   const [banner, setBanner] = useState([]);
   const [genresMovies, setGenres] = useState([]);
@@ -17,7 +26,7 @@ export default function Banner({ id }) {
       getMoviesDetails(id).then((data) => setBanner(data));
       genreMovies().then((data) => setGenres(data));
     } else {
-      getMovies().then((data) => setBanner(data));
+      getMovies(1).then((data) => setBanner(data));
     }
   }, [id]);
 
@@ -25,7 +34,7 @@ export default function Banner({ id }) {
 
   let button;
 
-  if (idLocal == id) {
+  if (newId == id) {
     button = "";
   } else {
     button = <p className="moreInfoBanner">More info</p>;
@@ -34,8 +43,6 @@ export default function Banner({ id }) {
   if (!genres) {
     return null;
   }
-  // console.log(banner)
-  // console.log(genresMovies);
 
   return (
     <div className="banner_Container">
@@ -47,7 +54,7 @@ export default function Banner({ id }) {
         />
       </div>
       <div className="text_Banner">
-        <h2 className="title_Banner">{banner.original_title}</h2>
+        <h2 className="title_Banner">{banner.original_title || banner.original_name}</h2>
         <h4 className="tagline_Banner">{banner.tagline}</h4>
         <div className="genres_Banner">
           {genres.map((f) =>
@@ -62,7 +69,7 @@ export default function Banner({ id }) {
         <p className="vote_Banner">
           Rating: <span className="span_Vote">{banner.vote_average} </span>
         </p>
-        <Link to={id}>{button}</Link>
+        <Link to={'/movie?id=' + buttonBanner}>{button}</Link>
       </div>
     </div>
   );

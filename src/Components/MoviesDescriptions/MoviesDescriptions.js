@@ -38,7 +38,9 @@ export default function MoviesDescriptions() {
 
   return (
     <div className="descriptionsContainer">
-      <div className="bannerHome">{<Banner className="" id={id} />}</div>
+      <div className="bannerHome">
+        <Banner id={pathname + "/" + id} />
+      </div>
       <div className="containerInfoDescrip">
         <div className="navCenter">
           <Nav />

@@ -15,9 +15,9 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route component={MoviesSections} path="/movies" />
+          <Route component={TvShowsSection} path="/tvs" />
           <Route path="/movie" component={MoviesDescriptions} />
-          <Route path="/tv/:tvId" component={MoviesDescriptions} />
-          <Route component={TvShowsSection} path="/tv" />
+          <Route path="/tv" component={MoviesDescriptions} />
           <Route component={Login} path="/login" />
           <Route component={ListOfMovies} path="/" />
         </Switch>

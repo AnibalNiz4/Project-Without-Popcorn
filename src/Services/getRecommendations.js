@@ -6,7 +6,6 @@ export default function getRecommendations(info) {
   return fetch(api2)
     .then((res) => res.json())
     .then((response) => {
-      console.log(response);
       const data = response.results;
       const recommendations = data.map((mov) => {
         const {

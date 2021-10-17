@@ -22,7 +22,7 @@ export default function NavResponsive() {
             </Link>
           </li>
           <li>
-            <Link onClick={setTopBar} to="/tv">
+            <Link onClick={setTopBar} to="/tvs">
               TV Shows
             </Link>
           </li>

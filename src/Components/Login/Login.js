@@ -3,7 +3,6 @@ import "./login.scss";
 import { Link } from "react-router-dom";
 
 export default function Login() {
-  alert("Pedro");
   return (
     <div className="loginContainer">
       <div className="backgroundLogin"></div>

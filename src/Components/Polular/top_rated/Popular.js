@@ -35,7 +35,7 @@ export default function PupularTopRated() {
                         overview={boe.overview}
                         genre_ids={boe.genre_ids}
                         genres={genre}
-                        info='/movie/'
+                        info={`/movie?id=${boe.id}`}
                         />
                     )
                 }
@@ -52,7 +52,7 @@ export default function PupularTopRated() {
                         vote_average={boe.vote_average}
                         genre_ids={boe.genre_ids}
                         genres={genre}
-                        info='/movie/'
+                        info={`/movie?id=${boe.id}`}
                         />
                     )
                 }
